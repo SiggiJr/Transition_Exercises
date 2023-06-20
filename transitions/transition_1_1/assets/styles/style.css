@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 200px;
+  background-color: gainsboro;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: transform 5s ease-in-out, background-color 5s ease-in-out;
+}
+
+.container:hover div {
+  transform: translateX(calc(100vw - 100px));
+  left: 500px;
+  background-color: blue;
+}
